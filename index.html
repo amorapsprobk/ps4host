@@ -148,8 +148,8 @@
     <script>
         function startExploit(type) {
             if(type === 'goldhen') {
-                alert("جاري تشغيل ثغرة pOOBs4...\nيرجى إدخال الفلاشة (USB) عندما تطلب منك الشاشة ذلك، ثم اضغط موافق.");
-                location.href = "payload.html";
+                // الانتقال المباشر لملف الـ PSFree ليعمل تلقائياً بدون رسالة وبدون فلاشة
+                location.href = "exploit.js";
             } else if(type === 'binloader') {
                 alert("جاري تفعيل الـ Bin Loader... انتظر إرسال ملف الـ Payload من الكمبيوتر.");
             } else if(type === 'webftp') {
