@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>مستضيف تعديل PS4 إصدار 9.00</title>
     <style>
-        /* تصميم الخلفية المتدرجة والحديثة */
         body {
             background: linear-gradient(135deg, #0f172a, #1e1b4b, #311042);
             background-size: 400% 400%;
@@ -16,147 +15,44 @@
             margin: 0;
             min-height: 100vh;
         }
-
-        /* حركة انسيابية للخلفية */
         @keyframes gradientBG {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
-
-        /* تصميم الهيدر واسم المطور */
-        .header-section {
-            margin-bottom: 30px;
-        }
-        h1 {
-            color: #00f0ff;
-            font-size: 32px;
-            text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
-            margin: 10px 0;
-        }
-        .dev-name {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-        }
-        .name-main {
-            background: linear-gradient(to left, #ff007f, #00f0ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .insta-icon {
-            color: #ff007f;
-            font-size: 22px;
-        }
-        .insta-handle {
-            color: #e2e8f0;
-            font-size: 16px;
-            opacity: 0.9;
-        }
-
-        /* تصميم الحوافظ أو الصناديق */
-        .container {
-            max-width: 550px;
-            margin: 20px auto;
-            background: rgba(30, 41, 59, 0.7);
-            padding: 25px;
-            border-radius: 16px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-
-        h2 {
-            font-size: 18px;
-            color: #e2e8f0;
-            margin-top: 0;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 10px;
-        }
-
-        /* تصميم الأزرار المعدلة بنظام النيون */
-        .btn {
-            background: linear-gradient(90deg, #0070d1, #00b4d8);
-            color: white;
-            border: none;
-            padding: 14px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            margin: 10px 0;
-            cursor: pointer;
-            border-radius: 10px;
-            width: 100%;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 112, 209, 0.4);
-        }
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 240, 255, 0.6);
-            background: linear-gradient(90deg, #0054a6, #0096c7);
-        }
-
-        /* زر فرعي بلون مختلف للأدوات الأخرى */
-        .btn-alt {
-            background: linear-gradient(90deg, #7b2cbf, #9d4edd);
-            box-shadow: 0 4px 15px rgba(123, 44, 191, 0.4);
-        }
-        .btn-alt:hover {
-            box-shadow: 0 6px 20px rgba(157, 78, 221, 0.6);
-            background: linear-gradient(90deg, #5a189a, #7b2cbf);
-        }
-
-        .footer {
-            margin-top: 60px;
-            font-size: 13px;
-            color: #94a3b8;
-        }
+        .header-section { margin-bottom: 30px; }
+        h1 { color: #00f0ff; font-size: 32px; text-shadow: 0 0 10px rgba(0, 240, 255, 0.5); }
+        .dev-name { font-size: 20px; font-weight: bold; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .name-main { background: linear-gradient(to left, #ff007f, #00f0ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .insta-icon { color: #ff007f; font-size: 22px; }
+        .insta-handle { color: #e2e8f0; font-size: 16px; }
+        .container { max-width: 550px; margin: 20px auto; background: rgba(30, 41, 59, 0.7); padding: 25px; border-radius: 16px; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        h2 { font-size: 18px; color: #e2e8f0; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 10px; }
+        .btn { background: linear-gradient(90deg, #0070d1, #00b4d8); color: white; border: none; padding: 14px 20px; font-size: 16px; font-weight: bold; margin: 10px 0; cursor: pointer; border-radius: 10px; width: 100%; box-shadow: 0 4px 15px rgba(0, 112, 209, 0.4); }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0, 240, 255, 0.6); }
+        .btn-alt { background: linear-gradient(90deg, #7b2cbf, #9d4edd); }
+        .footer { margin-top: 60px; font-size: 13px; color: #94a3b8; }
     </style>
 </head>
 <body>
-
     <div class="header-section">
         <h1>موقع التعديل الاحترافي - PS4 9.00</h1>
-        <!-- اسم المطور وحساب الإنستا مع الشعار -->
         <div class="dev-name">
             <span class="name-main">بواسطة المطور: amora.bk</span>
             <span class="insta-icon">📸</span>
             <span class="insta-handle">amora_baker78</span>
         </div>
     </div>
-
-    <!-- القسم الأول: التعديل الأساسي -->
     <div class="container">
         <h2>النظام الأساسي (Exploit)</h2>
         <button class="btn" onclick="startExploit('goldhen')">تفعيل GoldHEN v2.4b14</button>
     </div>
-
-    <!-- القسم الثاني: أدوات مساعدة وقوائم غش (Payloads) -->
-    <div class="container">
-        <h2>أدوات ومستودع الحقن (Payloads)</h2>
-        <button class="btn btn-alt" onclick="startExploit('binloader')">تشغيل Bin Loader (منفذ 9020)</button>
-        <button class="btn btn-alt" onclick="startExploit('webftp')">تشغيل FTP (لنقل ملفات الألعاب)</button>
-    </div>
-
-    <div class="footer">
-        جميع الحقوق محفوظة © 2026 | تم التصميم عبر الهاتف الذكي
-    </div>
-
     <script>
         function startExploit(type) {
             if(type === 'goldhen') {
-                // الانتقال المباشر لملف الـ PSFree ليعمل تلقائياً بدون رسالة وبدون فلاشة
-                location.href = "exploit.js";
-            } else if(type === 'binloader') {
-                alert("جاري تفعيل الـ Bin Loader... انتظر إرسال ملف الـ Payload من الكمبيوتر.");
-            } else if(type === 'webftp') {
-                alert("جاري تشغيل سيرفر الـ FTP... سيظهر الآيبي الخاص بجهازك قريباً.");
+                location.href = "payload.html";
             }
         }
     </script>
-
 </body>
 </html>
